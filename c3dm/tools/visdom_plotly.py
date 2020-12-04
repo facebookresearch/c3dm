@@ -1,3 +1,5 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+
 from visdom import Visdom
 from tools.vis_utils import get_visdom_connection, denorm_image_trivial
 import plotly.graph_objects as go

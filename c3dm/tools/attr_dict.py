@@ -1,3 +1,5 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+
 import copy
 
 def nested_attr_dict(dct):

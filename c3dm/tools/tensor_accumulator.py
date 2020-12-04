@@ -1,3 +1,5 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+
 from tools.utils import auto_init_args
 import torch
 import torch.nn.functional as Fu

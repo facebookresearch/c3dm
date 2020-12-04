@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# Copyright (c) Facebook, Inc. and its affiliates.
+
 """Pretty-print tabular data."""
 
 from __future__ import print_function

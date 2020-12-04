@@ -1,3 +1,5 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+
 from tools.attr_dict import AttrDict
 import inspect
 import io

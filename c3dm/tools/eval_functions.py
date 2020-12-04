@@ -1,3 +1,5 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+
 import time
 import torch
 import torch.nn.functional as Fu

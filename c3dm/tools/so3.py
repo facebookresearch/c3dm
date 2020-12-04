@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+# Copyright (c) Facebook, Inc. and its affiliates.
+
 import torch
 import math
 import torch.nn.functional as Fu
@@ -263,7 +264,3 @@ def hat(v: torch.Tensor):
 
     return h
 
-
-if __name__=='__main__':
-    a12 = torch.randn(10, 6)
-    R = so3_6d_to_rot(a12)

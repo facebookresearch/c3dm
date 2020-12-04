@@ -1,5 +1,4 @@
-## TODO - try shape predictor from model.py
-## TODO - try repro loss from model.py
+# Copyright (c) Facebook, Inc. and its affiliates.
 
 import matplotlib
 matplotlib.use('Agg')

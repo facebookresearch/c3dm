@@ -1,9 +1,11 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+
 import copy
 
 # list of root folders containing the dataset images
 IMAGE_ROOTS = {
-    'freicars_clickp_filtd': ('/checkpoint/romansh/datasets/vpdr/freicars/',),  #TEMP
-    'freicars_clickp_filtd_dbg': ('/checkpoint/romansh/datasets/vpdr/freicars/',),  #TEMP
+    'freicars_clickp_filtd': ('./dataset_root/freicars/',),
+    'freicars_clickp_filtd_dbg': ('./dataset_root/freicars/',),
     'cub_birds_hrnet_v2': ('./dataset_root/cub_birds/',),
     'celeba_ff': ('./dataset_root/celeba/',
                   './dataset_root/florence/'),
@@ -13,7 +15,7 @@ IMAGE_ROOTS = {
 MASK_ROOTS = copy.deepcopy(IMAGE_ROOTS)
 DEPTH_ROOTS = copy.deepcopy(IMAGE_ROOTS)
 
-MASK_ROOTS['cub_birds_hrnet_v2'] = ('/checkpoint/romansh/datasets/CUB_200_2011/',)  # TEMP
+MASK_ROOTS['cub_birds_hrnet_v2'] = ('./dataset_root/cub_birds/',)
 
 DATASET_ROOT = './dataset_root'
 

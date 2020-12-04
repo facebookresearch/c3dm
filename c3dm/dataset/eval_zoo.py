@@ -1,4 +1,5 @@
-# imports here ...
+# Copyright (c) Facebook, Inc. and its affiliates.
+
 from collections import defaultdict
 import json
 import os
