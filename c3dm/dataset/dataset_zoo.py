@@ -94,14 +94,6 @@ def get_train_val_roots(dataset_name, image_roots, urls):
 	if dataset_name not in image_roots:
 		return None, None
 
-	image_roots = copy.copy(image_roots[dataset_name])
-	if len(image_roots) == 2:
-		return image_roots
-	elif len(image_roots) == 1:
-		return image_roots[0], image_roots[0]
-	else:
-		raise ValueError('Wrong image roots format.')
-
 	for subset_idx, images_dir in enumerate(image_roots[dataset_name]):
 		if not os.path.exists(images_dir):
 			if dataset_name not in urls:
@@ -112,6 +104,14 @@ def get_train_val_roots(dataset_name, image_roots, urls):
 			url = urls[dataset_name][subset_idx]
 			print('Downloading images to %s from %s' % (images_dir, url))
 			utils.untar_to_dir(url, images_dir)
+
+	image_roots = copy.copy(image_roots[dataset_name])
+	if len(image_roots) == 2:
+		return image_roots
+	elif len(image_roots) == 1:
+		return image_roots[0], image_roots[0]
+	else:
+		raise ValueError('Wrong image roots format.')
 
 
 def download_dataset_json(json_file):

@@ -33,14 +33,15 @@ Running the code
 For evaluation, pass the config name for the dataset, e.g.:
 ```
 cd c3dm
-python ./experiment.py p3d-car.yaml --eval
+tar -xzf dataset_root.tar.gz
+python ./experiment.py freicars.yaml --eval
 ```
 The code should download the required data and pre-trained models.
 
 For training from scratch, make sure there is no model in `c3dm/exp_out`,
 otherwise training will continue from it. Then run e.g.
 ```
-python ./experiment.py p3d-car.yaml
+python ./experiment.py freicars.yaml
 ```
 
 License
